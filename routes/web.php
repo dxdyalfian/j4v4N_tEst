@@ -21,3 +21,6 @@ Route::put('{family_id}', [FamilyController::class, 'update'])->name('family.upd
 Route::get('add', [FamilyController::class, 'create'])->name('family.create');
 Route::post('/', [FamilyController::class, 'store'])->name('family.store');
 Route::delete('{family_id}', [FamilyController::class, 'destroy'])->name('family.destroy');
+Route::get('visualisasi', function(){
+    return view('visualisasi');
+})->name('family.visualisasi');

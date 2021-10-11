@@ -17,6 +17,7 @@
     <div class="container">
         <div class="mt-4">
             <a href="/">Home</a>
+            <a href="{{ route('family.visualisasi') }}">Visualisasi</a>
         </div>
         @yield('content')
     </div>
