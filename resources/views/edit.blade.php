@@ -17,12 +17,7 @@
             <form action="{{ route('family.update', encrypt($family->id)) }}" method="post">
                 @csrf
                 @method('PUT')
-                <div class="form-group row">
-                    <label for="fname" class="col-sm-2 col-form-label">Name</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="fname" placeholder="Name" name="name" @isset($family) value="{{ $family->name }}" @endisset>
-                    </div>
-                </div>
+                @include('_form')
                 <div class="form-group row">
                     <div class="col-sm-12 text-center">
                         <button type="reset" class="btn btn-danger">Reset</button>
